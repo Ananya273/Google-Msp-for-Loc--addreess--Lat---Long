@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" >
+
+    <RadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:text="Specify Longitude and Latitude respetively" />
+
+    
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton1"
+        android:layout_below="@+id/radioButton1"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioButton1"
+        android:layout_centerVertical="true"
+        android:text="Specify Address" />
+    
+      
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioButton2"
+        android:layout_alignRight="@+id/editText3"
+        android:ems="10" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_marginTop="38dp"
+        android:text="Select this button for Current Location" />
+
+</LinearLayout>
